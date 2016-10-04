@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\onedrive\documents\projects\2nd year\games programming\missilegame\main.cpp(166): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  MissileGame.vcxproj -> C:\OneDrive\Documents\Projects\2nd year\Games Programming\MissileGame\Debug\MissileGame.exe
+  MissileGame.vcxproj -> C:\OneDrive\Documents\Projects\2nd year\Games Programming\MissileGame\Debug\MissileGame.pdb (Partial PDB)
