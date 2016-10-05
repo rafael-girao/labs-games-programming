@@ -56,6 +56,7 @@ int main()
 {
 	int userInput = 0;
 	bool collided = false;
+	bool targetMiss;
 	str::Missile missile;
 	str::Enemy mexicans;
 
@@ -156,25 +157,34 @@ int main()
 
 	while (collided == false)
 	{
+		int previousCoordX = missile.coordinates.x;
+		int previousCoordY = missile.coordinates.y;
+		targetMiss = false;
 		missile.update();
 
 		if (missile.hitTarget() == true)
 		{
 			newLine();
 			std::cout << "TARGET HAS BEEN HIT\n";
-			float predictedCasualties = 
-				(missile.coordinates.x / mexicans.coordinates.x) + (missile.coordinates.y / mexicans.coordinates.y);
+			float predictedCasualties = 4.0f;
 			if (missile.payload == str::WarHead::EXPLOSIVE)
 			{
-				predictedCasualties *= 1000;
-				std::cout << " CASUALTIES: " << predictedCasualties << " dead";
+				predictedCasualties *= 1000.0f;
+				std::cout << " CASUALTIES: " << predictedCasualties << " dead" << std::endl;
 			}
 			else
 			{
-				predictedCasualties *= 100000;
-				std::cout << " CASUALTIES: " << predictedCasualties << " dead";
+				predictedCasualties *= 100000.0f;
+				std::cout << " CASUALTIES: " << predictedCasualties << " dead" << std::endl;
 			}
 			collided = true;
+		}
+		else if ( (previousCoordX == missile.coordinates.x) || (previousCoordY == missile.coordinates.y) )
+		{
+			newLine();
+			std::cout << "TARGET MISSED\n";
+			collided = true;
+			targetMiss = true;
 		}
 		else
 		{
@@ -188,11 +198,30 @@ int main()
 		}
 	}
 
-	std::cout << "I love the smell of napalm in the morning";
-	newLine();
-	std::cout << "MISSION COMPLETE !\n" << std::endl;
+	if (targetMiss == false)
+	{
+		switch (missile.payload)
+		{
+		case str::WarHead::EXPLOSIVE:
+			std::cout << "I love the smell of napalm in the morning";
+			break;
+		case str::WarHead::NUCLEAR:
+			std::cout << "I love the smell of radioactive napalm in the morning";
+			break;
+		default:
+			break;
+		}
+		newLine();
+		std::cout << "MISSION COMPLETE !\n" << std::endl;
+	}
+	else
+	{
+		newLine();
+		std::cout << "MISSION FAILED !\n" << std::endl;
+	}
+	
 	std::cout << "Leaving";
-	waitingDot(2000, 3);
+	waitingDot(2000, 5);
 }
 
 
