@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Attacking">
+      <UniqueIdentifier>{f7989a0d-5ee9-4f15-8c0f-62fbd65828e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lifeforms">
+      <UniqueIdentifier>{8eaa44d2-2dd6-4f3c-b6c5-94625674ef1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Attacking">
+      <UniqueIdentifier>{31221b33-57df-4ab3-876b-14a9f1b06c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lifeforms">
+      <UniqueIdentifier>{0571f029-9980-41de-aa13-4265574a6fbf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lifeform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellAtt.cpp">
+      <Filter>Source Files\Attacking</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponAtt.cpp">
+      <Filter>Source Files\Attacking</Filter>
+    </ClCompile>
+    <ClCompile Include="Attack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Orc.cpp">
+      <Filter>Source Files\Lifeforms</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Lifeform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Attack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellAtt.h">
+      <Filter>Header Files\Attacking</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponAtt.h">
+      <Filter>Header Files\Attacking</Filter>
+    </ClInclude>
+    <ClInclude Include="Orc.h">
+      <Filter>Header Files\Lifeforms</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

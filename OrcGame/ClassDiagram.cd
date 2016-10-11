@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Orc">
+    <Position X="3.5" Y="0.5" Width="1.75" />
+    <InheritanceLine Type="Lifeform">
+      <InheritanceModifierLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.037" Y="-0.002" Height="0.182" Width="0.69" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Orc.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lifeform">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ARAAAAAgAAAggABAAgCEAAAAIABAAAAAKAAAAAgEAAA=</HashCode>
+      <FileName>Lifeform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Attack">
+    <Position X="5.5" Y="0.5" Width="2" />
+    <NestedTypes>
+      <Enum Name="Attack::Type">
+        <TypeIdentifier>
+          <NewMemberFileName>Attack.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAEAYAAAAgAAAAAAIAAAAAAAAIAAAQAAAAAAAAgAAAA=</HashCode>
+      <FileName>Attack.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeaponAtt">
+    <Position X="8.25" Y="1.25" Width="1.75" />
+    <NestedTypes>
+      <Enum Name="WeaponAtt::Weapon">
+        <TypeIdentifier>
+          <NewMemberFileName>WeaponAtt.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="WeaponAtt::Direction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WeaponAtt.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIQAAAAAAAIAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WeaponAtt.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpellAtt">
+    <Position X="10.25" Y="0.5" Width="2" />
+    <NestedTypes>
+      <Enum Name="SpellAtt::AreaOfEffect">
+        <TypeIdentifier>
+          <NewMemberFileName>SpellAtt.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="SpellAtt::Range">
+        <TypeIdentifier>
+          <NewMemberFileName>SpellAtt.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="SpellAtt::Element">
+        <TypeIdentifier>
+          <NewMemberFileName>SpellAtt.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQwAAEAAAIAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>SpellAtt.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

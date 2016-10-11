@@ -1,0 +1,15 @@
+﻿  WeaponAtt.cpp
+  SpellAtt.cpp
+  Orc.cpp
+c:\onedrive\documents\github\labs-games-programming\orcgame\orc.cpp(13): warning C4800: 'Orc *const ': forcing value to bool 'true' or 'false' (performance warning)
+c:\onedrive\documents\github\labs-games-programming\orcgame\orc.cpp(18): warning C4800: 'Orc *const ': forcing value to bool 'true' or 'false' (performance warning)
+c:\onedrive\documents\github\labs-games-programming\orcgame\orc.cpp(19): warning C4800: 'Orc *const ': forcing value to bool 'true' or 'false' (performance warning)
+c:\onedrive\documents\github\labs-games-programming\orcgame\orc.cpp(20): warning C4800: 'Orc *const ': forcing value to bool 'true' or 'false' (performance warning)
+c:\onedrive\documents\github\labs-games-programming\orcgame\orc.cpp(21): warning C4800: 'Orc *const ': forcing value to bool 'true' or 'false' (performance warning)
+c:\onedrive\documents\github\labs-games-programming\orcgame\orc.cpp(26): warning C4800: 'Orc *const ': forcing value to bool 'true' or 'false' (performance warning)
+  main.cpp
+  Lifeform.cpp
+  Attack.cpp
+  Generating Code...
+  OrcGame.vcxproj -> C:\OneDrive\Documents\GitHub\labs-games-programming\OrcGame\x64\Debug\OrcGame.exe
+  OrcGame.vcxproj -> C:\OneDrive\Documents\GitHub\labs-games-programming\OrcGame\x64\Debug\OrcGame.pdb (Partial PDB)
